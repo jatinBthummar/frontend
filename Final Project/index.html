@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee cafe</title>
+    <link type="text/css" rel="stylesheet" href="cafe.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="main.js" defer></script>
+</head>
+<body>
+    
+		<nav class="nav">
+			<div>
+				<img src="images/logo.png" alt="Coffee cafe"/>
+			</div>
+			<div >
+				<a href="index.html" class="navigation">Home</a>
+				<a href="Aboutus.html" class="navigation">AboutUs</a>
+			</div>
+		</nav>
+   
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+            	<h2>Menu</h2>
+            	<p>Click an item to add it to your order.</p>
+            	<ul class="grid-container">
+            		<li class="grid-item"><a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="espresso"/></a></li>
+            		<li class="grid-item"><a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="latte"/></a></li>
+            		<li class="grid-item"><a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="cappuccino"/></a></li>
+            		<li class="grid-item"><a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="coffee"/></a></li>
+            		<li class="grid-item"><a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="biscotti"/></a></li>
+            		<li class="grid-item"><a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="scone"/></a></li>
+            	</ul>
+            </section>
+
+            <section>
+            	<h2>Your Order</h2>
+            	<section>
+            		<select id="order" name="order" size="6">
+            		</select>
+            		<p id="total">&nbsp;</p>            		
+           		</section>
+            	<section id="buttons">
+           			<input type="button" name="place_order" id="place_order" value="Place Order" class="btn">
+           			<input type="button" name="clear_order" id="clear_order" value="Clear Order" class="btn">				            		
+            	</section>
+            </section>   
+
+
+
+        </form>
+    </main> 
+</body>
+</html>
